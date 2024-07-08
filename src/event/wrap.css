@@ -1,0 +1,7 @@
+#wrap button.btn1 {
+    width: 100px;
+    height: 50px;
+    border: 1px solid #dadada;
+    cursor: pointer;
+    margin: 2px;
+}

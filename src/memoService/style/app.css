@@ -1,0 +1,57 @@
+/* WRAP START */
+#wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+/* WRAP END */
+
+
+/* MENUBAR START */
+#menubar div.menus {
+    display: flex;
+    justify-content: space-around;
+}
+/* MENUBAR END */
+
+
+/* VIEW START */
+#home {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#sign_up {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#sign_in {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#modify {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#memo {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#memo_list {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#memo_list li {
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+#memo_list li:hover {
+    background-color: rgba(200, 200, 200, .2);
+    cursor: pointer;
+}
+/* VIEW END */

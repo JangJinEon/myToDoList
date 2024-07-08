@@ -1,0 +1,31 @@
+#wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* thums START */
+#wrap div.thums {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+#wrap div.thums img.thum {
+    min-width: 150px;
+    max-width: 150px;
+}
+/* thums END */
+
+/* modal START */
+#wrap div.modal_bg {
+    width: 100%; height: 100%;
+    position: fixed;
+    left: 0; top: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+#wrap div.modal_bg div.modal {
+    margin-top: 100px;
+    text-align: center;
+}
+/* modal END */

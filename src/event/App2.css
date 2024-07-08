@@ -1,0 +1,8 @@
+#menu_wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#menu_wrap div.up_down_arrow {
+    text-align: right;
+}
