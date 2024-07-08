@@ -1,0 +1,378 @@
+/* COMMON */
+a {
+    text-decoration: none;
+    color: #242424;
+    outline: "none";
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li {
+    list-style: none;
+}
+
+input.txt-basic {
+    width: 300px;
+    padding: 10px;
+    margin: 2px;
+    border: 1px solid rgba(100, 100, 100, .4);
+    outline: none;
+    border-radius: 5px;
+}
+
+input.txt-large {
+    width: 500px;
+    padding: 15px;
+    margin: 2px;
+    border: 1px solid rgba(100, 100, 100, .4);
+    outline: none;
+    border-radius: 5px;
+}
+
+input.btn-basic,
+button.btn-basic {
+    width: 80px;
+    padding: 7px;
+    margin: 2px;
+    border: 1px solid rgba(100, 100, 100, .4);
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input.btn-basic:hover,
+button.btn-basic:hover {
+    background-color: rgba(200, 200, 200, .2);
+}
+
+/* HEADER */
+#header {
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 1px solid rgba(100, 100, 100, .2);
+    text-align: center;
+    background-color: rgba(200, 200, 200, .2);
+}
+
+#header h2 {
+    margin: 0;
+}
+
+/* WRAP */
+#wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* MENUBAR */
+#wrap div.menubar {
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(100, 100, 100, .2);
+}
+
+#wrap div.menubar a {
+    display: inline-block;
+}
+
+/* HOME */
+#wrap div.home {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#wrap div.home div.slick_top {
+    position: relative;
+}
+
+#wrap div.home div.slick_top img.slick_top_arrow_left {
+    position: absolute;
+    left: 5px; top: 75px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 25px;
+}
+
+#wrap div.home div.slick_top img.slick_top_arrow_right {
+    position: absolute;
+    right: 5px; top: 75px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 25px;
+}
+
+#wrap div.home div.slick_middle {
+    position: relative;
+}
+
+#wrap div.home div.slick_middle img.slick_middle_arrow_left {
+    position: absolute;
+    left: 0; top: 275px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 0 4px 4px 0;
+}
+
+#wrap div.home div.slick_middle img.slick_middle_arrow_right {
+    position: absolute;
+    right: 0; top: 275px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 4px 0 0 4px;
+}
+
+#wrap div.home div.slick_middle img.slick_middle_arrow_left:hover,
+#wrap div.home div.slick_middle img.slick_middle_arrow_right:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+/* SIGN UP */
+#wrap div.sign-up {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* SIGN IN */
+#wrap div.sign-in {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* MODIFY */
+#wrap div.modify {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* TODO WRITE */
+#wrap div.todo-write {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#wrap div.todo-write input[type="date"] {
+    width: 100px;
+    padding: 14px;
+    margin: 2px;
+    border: 1px solid rgba(100, 100, 100, .4);
+    outline: none;
+    border-radius: 4px;
+}
+
+/* TODO LIST */
+#wrap div.todo-list {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#wrap div.todo-list li.todo-li {
+    border-bottom: 1px solid #dadada;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#wrap div.todo-list li.todo-li:hover {
+    background-color: rgba(180, 180, 180, .1);
+}
+
+#wrap div.todo-list span.todo-txt {
+    display: inline-block;
+    width: 500px;
+    text-align: left;
+}
+
+#wrap div.todo-list span.todo-txt-completed {
+    display: inline-block;
+    width: 500px;
+    text-align: left;
+    text-decoration: line-through;
+}
+
+#wrap div.page-wrap button {
+    width: 50px; height: 50px;
+    border: 1px solid #bbd7ef;
+    background-color: rgba(255, 255, 255, 1.0);
+    margin: 0 7px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#wrap div.page-wrap input.gotoPage {
+    width: 44px; height: 46px;
+    border: 1px solid #bbd7ef;
+    background-color: rgba(255, 255, 255, 1.0);
+    margin: 0 7px;
+    outline: none;
+    text-align: center;
+}
+
+#wrap div.page-wrap button.gotoPageBtn {
+    width: 100px; height: 50px;
+    border: 1px solid #bbd7ef;
+    background-color: #bbd7ef;
+    margin: 0;
+    outline: none;
+    text-align: center;
+    color: #fff;
+}
+
+/* TODO MODIFY */
+#wrap div.todo-modify {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* FOOTER */
+#footer {
+    margin-top: 50px;
+    height:200px;
+    line-height: 200px;
+    border-top: 1px solid rgba(100, 100, 100, .1);
+    text-align: center;
+    background-color: rgba(200, 200, 200, .2);
+}
+
+
+/* ADMIN MENUBAR */
+#wrap div.admin-menubar {
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(100, 100, 100, .2);
+}
+
+#wrap div.admin-menubar a {
+    display: inline-block;
+}
+
+/* ADMIN SIGN IN */
+#wrap div.admin-sign-in {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* ADMIN MEMBER LIST */
+#wrap div.admin-member-list {
+    margin-top: 50px;
+}
+
+#wrap div.admin-member-list h3.title {
+    text-align: center;
+}
+
+#wrap div.admin-member-list hr {
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+#wrap div.admin-member-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#wrap div.admin-member-list table th {
+    padding: 7px;
+    border: 1px solid #dadada;
+    background-color: #f1f1f1;
+}
+
+#wrap div.admin-member-list table td {
+    padding: 7px;
+    border: 1px solid #dadada;
+    text-align: center;
+}
+
+#wrap div.admin-member-list table tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* ADMIN MODAL */
+#admin-modal {
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    position: fixed;
+    left: 0; top: 0;
+    /* display: none; */
+}
+
+#admin-modal div.admin-modal-content {
+    width: 80%;
+    margin: 80px auto 0;
+}
+
+#admin-modal div.admin-modal-content ul {
+    display: flex;
+    margin: 5px 0;
+    flex-direction: row-reverse;
+    /* justify-content: space-around; */
+}
+
+#admin-modal div.admin-modal-content ul li {
+    margin: 0 5px;
+    padding: 3px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#admin-modal div.admin-modal-content ul li:first-child {
+    margin-right: 0;
+}
+
+#admin-modal table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+#admin-modal table th {
+    padding: 7px;
+    border: 1px solid #dadada;
+    background-color: #f1f1f1;
+}
+
+#admin-modal table td {
+    padding: 10px;
+    border: 1px solid #dadada;
+    text-align: center;
+}
+
+#admin-modal table tr:hover {
+    background-color: #f5f5f5;
+}
+
+#admin-modal div.admin-modal-close {
+    text-align: right;
+}
+
+#admin-modal div.admin-modal-close button {
+    padding: 7px 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* TOP ARROW */
+#top-arrow {
+    position: fixed;
+    right: 30px; bottom: 30px;
+    width: 60px; height: 60px;
+    line-height: 54px;
+    text-align: center;
+    background-color: rgba(163, 207, 230, 0.3);
+    border: 1px solid rgba(163, 207, 230, 0.4);
+    box-sizing: border-box;
+}
+
+#top-arrow:hover {
+    cursor: pointer;
+    background-color: rgba(163, 207, 230, 0.5);
+}
