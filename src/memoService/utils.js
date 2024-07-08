@@ -22,7 +22,7 @@ export const getCurrentDateTime = () => {
 export const convertMapToArray = (objs) => {
     console.log('convertMapToArray()');
 
-    let myMemoKeys = Object.keys(objs);     // keys(array)
+    let myMemoKeys = Object.keys(objs);     // keys(Array)
 
     let myMemoArr = [];
     for (let i = 0; i < myMemoKeys.length; i++) {

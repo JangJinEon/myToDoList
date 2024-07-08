@@ -5,7 +5,8 @@ import SignIn from "./member/SignIn";
 import Modify from "./member/Modify";
 import Memo from "./memo/Memo";
 import MemoList from "./memo/MemoList";
-import {setLoginedSessionID, getLoginedSessionID} from './session.js'
+
+import { setLoginedSessionID, getLoginedSessionID } from './session.js';
 
 const Menubar = () => {
 
@@ -59,18 +60,17 @@ const Menubar = () => {
     const signOutClickHandelr = () => {
         console.log('signOutClickHandelr()');
 
-        setLoginedSessionID();      // session change
+        setLoginedSessionID();      // Session change
 
-        setIsHome(true);            // view change
+        setIsHome(true);            // View change
         setIsSignUp(false);
         setIsSignIn(false);
         setIsModify(false);
         setIsMemo(false);
         setIsMemoList(false);
+
+        setIsLogined(false)         // Menu change
         
-        setIsLogined(false)         // menu change
-
-
     }
 
     const modifyClickHandelr = () => {
@@ -87,10 +87,10 @@ const Menubar = () => {
 
     const memoClickHandelr = () => {
         console.log('memoClickHandelr()');
-
+        
         if (getLoginedSessionID() === '') {
-
-            alert('Please sign-in');
+            
+            alert('PLEASE SIGN-IN!!');
 
             setIsHome(false);
             setIsSignUp(false);
@@ -100,9 +100,8 @@ const Menubar = () => {
             setIsMemoList(false);
 
             return;
-
         }
-        
+
         setIsHome(false);
         setIsSignUp(false);
         setIsSignIn(false);
@@ -116,8 +115,8 @@ const Menubar = () => {
         console.log('memoListClickHandelr()');
 
         if (getLoginedSessionID() === '') {
-
-            alert('Please sign-in');
+            
+            alert('PLEASE SIGN-IN!!');
 
             setIsHome(false);
             setIsSignUp(false);
@@ -127,7 +126,6 @@ const Menubar = () => {
             setIsMemoList(false);
 
             return;
-
         }
 
         setIsHome(false);
@@ -206,8 +204,8 @@ const Menubar = () => {
                         signInViewer={setIsSignIn} 
                         modifyViewer={setIsModify}
                         memoViewer={setIsMemo} 
-                        memoListViewer={setIsMemoList}
-                        changeMenuBar={setIsLogined} 
+                        memoListViewer={setIsMemoList} 
+                        changeMenuBar={setIsLogined}  
                     />
                 :
                 null
@@ -217,12 +215,12 @@ const Menubar = () => {
                 isMemo
                 ?
                     <Memo 
-                    homeViewer={setIsHome} 
-                    signUpViewer={setIsSignUp} 
-                    signInViewer={setIsSignIn} 
-                    modifyViewer={setIsModify}
-                    memoViewer={setIsMemo} 
-                    memoListViewer={setIsMemoList}
+                        homeViewer={setIsHome} 
+                        signUpViewer={setIsSignUp} 
+                        signInViewer={setIsSignIn} 
+                        modifyViewer={setIsModify}
+                        memoViewer={setIsMemo} 
+                        memoListViewer={setIsMemoList}
                     />
                 :
                 null

@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { getMyMemoObjs, setMyMemoObjs } from '../const/const.js'
-import { getLoginedSessionID } from "../session.js";
-import { getCurrentDateTime } from "../utils.js";
-
+import { getMyMemoObjs, setMyMemoObjs } from '../const/const.js';
+import { getLoginedSessionID } from '../session.js';
+import { getCurrentDateTime } from '../utils.js';
 
 const Memo = (props) => {
 
@@ -10,16 +9,16 @@ const Memo = (props) => {
     const [memoTxt, setMemoTxt] = useState('');
 
     // handler
-    const memoTxtChangeHandler = (e)  => {
+    const memoTxtChangeHandler = (e) => {
         console.log('memoTxtChangeHandler()');
 
         setMemoTxt(e.target.value);
 
     }
 
-    const writeBtnClickHandler = ()  => {
+    const writeBtnClickHandler = () => {
         console.log('writeBtnClickHandler()');
-
+        
         let myMemoObjs = getMyMemoObjs(getLoginedSessionID());
         myMemoObjs[getCurrentDateTime()] = {
             'mTxt' : memoTxt,
@@ -29,7 +28,7 @@ const Memo = (props) => {
 
         setMyMemoObjs(getLoginedSessionID(), myMemoObjs);
 
-        alert('memo write success!!');
+        alert('MEMO WRITE SUCCESS!!');
 
         props.homeViewer(false);
         props.signUpViewer(false);
@@ -37,7 +36,7 @@ const Memo = (props) => {
         props.modifyViewer(false);
         props.memoViewer(false);
         props.memoListViewer(true);
-        
+
     }
 
     return(
@@ -48,10 +47,11 @@ const Memo = (props) => {
                 className="txt_field" 
                 onChange={memoTxtChangeHandler} 
                 placeholder="Input memo" />
-
-            <button className="basic_btn" onClick={writeBtnClickHandler}>
-                Write
-            </button>
+            <button 
+                className="basic_btn" 
+                onClick={writeBtnClickHandler}>
+                    WRITE
+                </button>
         </div>
     );
 }
